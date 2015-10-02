@@ -37,5 +37,15 @@ namespace BLL
             IMDB = pIMDB;
             CategoriaId = pCategoriaId;
         }
+        public bool Insertar()
+        {
+            bool retorno = false;
+
+            ConexionDB conexion = new ConexionDB();
+
+            conexion.Ejecutar(string.Format("Insert into(Titulo,Descripcion,Ano,Calificacion,IMDB,CategoriaID)",Titulo,Descripcion,Ano,Calificacion,IMDB,CategoriaId));
+
+            return retorno;
+        }
     }
 }

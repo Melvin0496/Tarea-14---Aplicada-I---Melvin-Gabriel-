@@ -19,7 +19,7 @@ namespace DAL
             con = new SqlConnection("Data Source = JUNIOR-PC\\ROOT;Initial Catalog = RegistroPeliculaDb;Integrated Security = true");
             cmd = new SqlCommand();
         }
-        public bool Ejecutar(String ComandoSql)
+        public bool Ejecutar(string ComandoSql)
         {
             bool retorno = false;
 
